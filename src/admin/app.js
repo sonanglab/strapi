@@ -28,9 +28,14 @@ export default {
       // 'zh-Hans',
       // 'zh',
     ],
-    menu: {
-      logo: MenuLogo,
-    },
+    translations: {
+      en: {
+        'app.components.LeftMenu.navbrand.title': 'Sonang Labs',
+        'app.components.LeftMenu.navbrand.title': 'Sonang Labs',
+        "Auth.form.welcome.title": "Welcome to Sonang Labs!",
+        "Auth.form.welcome.subtitle": "Log in to Sonang Labs",
+      }
+    }
   },
   bootstrap(app) {
     console.log(app);
