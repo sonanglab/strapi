@@ -28,6 +28,9 @@ export default {
       // 'zh-Hans',
       // 'zh',
     ],
+    menu: {
+      logo: MenuLogo,
+    },
   },
   bootstrap(app) {
     console.log(app);
