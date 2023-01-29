@@ -112,3 +112,8 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+#########
+# development plugin
+#########
+config/plugins.dev.js

@@ -1,3 +1,5 @@
+const pluginDevs = require('./plugins.dev') ?? {}
+
 module.exports = ({ env }) => ({
     'users-permissions': {
       config: {
@@ -17,5 +19,6 @@ module.exports = ({ env }) => ({
           delete: {},
         },
       },
-    }
+    },
+    ...pluginDevs
   });
