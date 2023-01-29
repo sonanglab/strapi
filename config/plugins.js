@@ -18,4 +18,8 @@ module.exports = ({ env }) => ({
         },
       },
     },
+    blog: {
+      enabled: true,
+      resolve: './src/plugins/blog'
+    }
   });
