@@ -1,6 +1,7 @@
-const pluginDevs = require('./plugins.dev') ?? {}
+module.exports = ({ env }) => {
+  const pluginDevs = env('NODE_ENV') === 'production' ? {} : require('./plugins.dev')
 
-module.exports = ({ env }) => ({
+  return ({
     'users-permissions': {
       config: {
       jwtSecret: env('JWT_SECRET'),
@@ -22,3 +23,4 @@ module.exports = ({ env }) => ({
     },
     ...pluginDevs
   });
+}
