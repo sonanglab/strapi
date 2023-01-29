@@ -17,9 +17,5 @@ module.exports = ({ env }) => ({
           delete: {},
         },
       },
-    },
-    blog: {
-      enabled: true,
-      resolve: './src/plugins/blog'
     }
   });
